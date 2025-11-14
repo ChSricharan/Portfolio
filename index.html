@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sricharan | Portfolio</title>
+
+    <!-- ✅ CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- ✅ AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ✅ Google Font (for clean typography) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for GitHub Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ✅ NAVIGATION BAR -->
+    <header>
+      <nav class="navbar">
+        <h1 class="logo" data-aos="fade-right">Sricharan Chebolu</h1>
+        <ul>
+          <li><a href="#hero" data-aos="fade-down">Home</a></li>
+          <li>
+            <a href="#about" data-aos="fade-down" data-aos-delay="100">About</a>
+          </li>
+          <li>
+            <a href="#skills" data-aos="fade-down" data-aos-delay="200"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" data-aos="fade-down" data-aos-delay="300"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" data-aos="fade-down" data-aos-delay="400"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- Dark Mode Toggle -->
+        <div class="toggle-container">
+          <input type="checkbox" id="dark-mode-toggle" />
+          <label for="dark-mode-toggle" class="toggle-label"></label>
+        </div>
+      </nav>
+    </header>
+
+  <!--Hero Section-->
+
+<section id="hero" class="hero" data-aos="fade-up">
+  <h2 data-aos="fade-down" data-aos-delay="200">
+    Hi, I'm <span>Sricharan</span>
+  </h2>
+  <h3 data-aos="zoom-in" data-aos-delay="400">Fresher Computer Science Graduate</h3>
+
+  <!-- Button container to prevent jump -->
+  <div class="resume-container">
+    <!-- Message that appears after prank -->
+    <p id="clickbait-msg" class="hidden prank-msg">
+       Congratulations, you’ve been click-baited! <br />
+      Here’s the real resume below 👇
+    </p>
+
+    <!-- Hidden real résumé button -->
+    <a
+      id="resume-real"
+      href="./assets/SriCharan_Resume.pdf"
+      target="_blank"
+      class="btn resume-btn hidden"
+    >
+      <i class="fa-solid fa-file-arrow-down"></i> Open Real Resume
+    </a>
+
+    <!-- Fake “clickbait” button -->
+    <button
+      id="resume-fake"
+      class="btn resume-btn"
+      data-aos="flip-up"
+      data-aos-delay="800"
+    >
+      <i class="fa-solid fa-file-arrow-down"></i> View Resume
+    </button>
+  </div>
+</section>
+
+
+
+    <!-- ✅ ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="about-content" data-aos="fade-right">
+        <h2>About Me</h2>
+        <p>
+          I'm a recent graduate specialized in Computer Science and Engineering
+          from Geethanjali College of Engineering and Technology with a cgpa of
+          7.84. As for my coursework, I've built foundations on core subjects
+          such as Cloud Computing, Software Engineering, Database Managament
+          Systems, Computer Networks and Data Structures and Algorithms. I've
+          experience in C, Java and Python programming languages and MySQL for
+          databses. My main major project was focused on Cloud Domain which
+          involved tech stack of AWS Cloud resources, Python code for
+          optimization algorithm, Building a neural network for load balancing
+          and Docker Containers.
+        </p>
+      </div>
+    </section>
+
+    <!-- ✅ SKILLS SECTION -->
+    <section id="skills" class="skills">
+      <h2 data-aos="zoom-in">Skills</h2>
+      <div class="skills-container">
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">
+          C Programming
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">Java</div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">Python</div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">DSA</div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">HTML</div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="200">CSS</div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="300">
+          JavaScript
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="400">MySQL</div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">
+          Databases
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">Git</div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">GitHub</div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="500">
+          AWS Cloud
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="600">
+          Cloud Computing
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">
+          Basics of Shell Scripting
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <h2 data-aos="zoom-in">Projects</h2>
+      <div class="project-card" data-aos="flip-left">
+        <h3>Portfolio Website</h3>
+        <p>
+          A responsive personal portfolio showcasing my web development skills.
+        </p>
+      </div>
+      <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+        <h3>DADO For Efficient Data Migration of Cloud Instances</h3>
+        <p>
+          Developed a Python-based optimization model leveraging Adaptive
+          Dragonfly Optimization (ADrO) and Actor-Critic Neural Networks to
+          enhance data migration across heterogeneous cloud environments. This
+          multi-objective algorithm minimizes energy consumption, migration
+          time, and transmission cost, achieving improved scalability, energy
+          efficiency, and resource utilization. Implemented using Docker,
+          TensorFlow/PyTorch, and container management techniques.
+        </p>
+        <a
+          href="https://github.com/ChSricharan/DADO"
+          target="_blank"
+          class="github-link"
+        >
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+      <div class="project-card" data-aos="flip-left">
+        <h3>LZW-Driven Medical Image Compression</h3>
+        <p>
+          Developed a web application using Python, OpenCV, and NumPy for
+          lossless LZW compression of grayscale medical images (MRI/CT),
+          achieving 3:1 compression ratios while preserving diagnostic quality.
+          Implemented grayscale validation, decompression verification, and
+          OpenSSL AES-256-CBC encryption for secure file handling, enabling
+          efficient storage and password-protected transmission for telemedicine
+          applications. Frontend built with HTML and CSS
+        </p>
+        <a
+          href="https://github.com/ChSricharan/LZW"
+          target="_blank"
+          class="github-link"
+        >
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+      <div class="project-card" data-aos="flip-left">
+        <h3>GameOn: Java Based Fun Playing Games</h3>
+        <p>
+          Developed three classic games (Tic-Tac-Toe, Brick Breaker, and Snake)
+          using Java Swing and AWT, focusing on interactive graphical user
+          interfaces and core game mechanics. Implemented player controls,
+          collision detection, scoring, and win/lose conditions, with a team of
+          five, ensuring smooth gameplay on desktop platforms. Documented the
+          project lifecycle, including data flow diagrams, requirements, and
+          screenshots, showcasing planning to deployment.
+        </p>
+        <a
+          href="https://github.com/ChSricharan/Java_Project"
+          target="_blank"
+          class="github-link"
+        >
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- ✅ CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <h2 data-aos="zoom-in">Contact</h2>
+      <p data-aos="fade-up" data-aos-delay="200">Let's work together!</p>
+      <a
+        href="mailto:charanchebolu7310@gmail.com"
+        class="btn"
+        data-aos="fade-up"
+        data-aos-delay="400"
+        >Email Me</a
+      >
+    </section>
+
+    <!-- ✅ FOOTER -->
+    <footer>
+      <p>© 2025 Sri Charan. All rights reserved.</p>
+    </footer>
+
+    <!-- ✅ SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
